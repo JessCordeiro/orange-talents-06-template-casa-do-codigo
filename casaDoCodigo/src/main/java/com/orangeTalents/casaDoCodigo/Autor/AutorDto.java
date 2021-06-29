@@ -7,6 +7,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.springframework.web.bind.annotation.InitBinder;
+
 
 
 public class AutorDto {
@@ -38,11 +40,6 @@ public class AutorDto {
 
 
 
-	public String getEmail() {
-		return email;
-	}
-
-
 	public String getDescricao() {
 		return descricao;
 	}
@@ -56,7 +53,9 @@ public class AutorDto {
 		return new Autor(this.nome, this.email, this.descricao);
 	}
 
-
+	public String getEmail() {
+		return this.email;
+	}
 	
 	
 }
