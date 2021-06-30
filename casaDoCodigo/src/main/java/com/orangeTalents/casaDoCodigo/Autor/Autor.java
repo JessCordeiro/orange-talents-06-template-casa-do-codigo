@@ -50,6 +50,7 @@ public class Autor {
 		return id;
 	}
 
+	
 
 
 	public String getNome() {
