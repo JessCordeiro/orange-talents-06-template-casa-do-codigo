@@ -18,4 +18,6 @@ public class ItemListaLivro {
 	public ResponseEntity<List<Livro>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
+	
+	
 }
