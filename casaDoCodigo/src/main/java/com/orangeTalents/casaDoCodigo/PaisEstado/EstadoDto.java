@@ -12,7 +12,7 @@ import com.orangeTalents.casaDoCodigo.Validacao.UniqueValue;
 public class EstadoDto {
 
 	@NotBlank
-	@UniqueValue(domainClass = Livro.class, fieldName = "titulo")
+	@UniqueValue(domainClass = Estado.class, fieldName = "nome")
 	private String nome;
 	
 	@OneToOne

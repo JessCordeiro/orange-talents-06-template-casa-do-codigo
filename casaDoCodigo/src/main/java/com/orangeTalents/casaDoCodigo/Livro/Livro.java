@@ -76,7 +76,7 @@ public class Livro {
 				@NotNull @Min(20) BigDecimal preco, @NotNull @Min(100) Integer paginas, @NotBlank String isbn,
 				@NotNull @Future LocalDate dataPublicacao, Categoria categoria, Autor autor) {
 			super();
-			this.id = id;
+			//this.id = id;
 			this.titulo = titulo;
 			this.resumo = resumo;
 			this.sumario = sumario;

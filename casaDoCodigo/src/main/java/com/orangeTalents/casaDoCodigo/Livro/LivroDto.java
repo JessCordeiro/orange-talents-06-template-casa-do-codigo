@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 import com.orangeTalents.casaDoCodigo.Autor.Autor;
 import com.orangeTalents.casaDoCodigo.Categoria.Categoria;
+import com.orangeTalents.casaDoCodigo.Validacao.ExistsId;
 import com.orangeTalents.casaDoCodigo.Validacao.UniqueValue;
 
 public class LivroDto {
@@ -49,10 +50,12 @@ public class LivroDto {
 	 
 	 @ManyToOne
 	 @NotNull
+	 @ExistsId(domainClass = Autor.class, fieldName = "id")
 	 private Long idAutor;
 	 
 	 @ManyToOne
 	 @NotNull
+	 @ExistsId(domainClass = Categoria.class, fieldName = "categoria")
 	 private Long idCategoria;
 
 	 @Deprecated

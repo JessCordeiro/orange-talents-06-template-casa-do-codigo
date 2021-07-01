@@ -3,6 +3,7 @@ package com.orangeTalents.casaDoCodigo.Categoria;
 import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.orangeTalents.casaDoCodigo.Livro.Livro;
 import com.orangeTalents.casaDoCodigo.Validacao.UniqueValue;
 
 
